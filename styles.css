@@ -1,6 +1,3 @@
-/* =========================
-   General Body Styles
-========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,16 +6,14 @@ body {
   transition: background 0.5s;
 }
 
-/* =========================
-   Header
-========================= */
+/*Header*/
 header {
   background: linear-gradient(135deg, #43a047, #66bb6a); /* Green gradient header */
   color: white;
   padding: 25px;
   text-align: center;
   animation: headerSlide 1s ease-in-out;
-  border-bottom: 4px solid #2e7d32; /* Dark green accent */
+  border-bottom: 4px solid #2e7d32; 
   border-radius: 0 0 15px 15px;
 }
 
@@ -31,7 +26,7 @@ header {
 /* Header Text White */
 header h1 {
   font-size: 2.2rem;
-  color: white; /* Make header text white */
+  color: white; 
   background: none;
   -webkit-background-clip: none;
   -webkit-text-fill-color: white;
@@ -42,9 +37,7 @@ header h1:hover {
   transform: scale(1.05);
 }
 
-/* =========================
-   Dashboard Cards
-========================= */
+/*Dashboard Cards*/
 .dashboard {
   display: flex;
   justify-content: space-around;
@@ -66,13 +59,13 @@ header h1:hover {
 }
 
 .card:nth-child(1) {
-  background: linear-gradient(135deg, #66bb6a, #43a047); /* Total Donations */
+  background: linear-gradient(135deg, #66bb6a, #43a047); 
 }
 .card:nth-child(2) {
-  background: linear-gradient(135deg, #81c784, #4caf50); /* Number of Donors */
+  background: linear-gradient(135deg, #81c784, #4caf50); 
 }
 .card:nth-child(3) {
-  background: linear-gradient(135deg, #a5d6a7, #66bb6a); /* Total Volunteers */
+  background: linear-gradient(135deg, #a5d6a7, #66bb6a);  
 }
 
 .card:hover {
@@ -81,7 +74,7 @@ header h1:hover {
 }
 
 .card h2::before {
-  content: "★"; /* Emoji or icon */
+  content: "★"; 
   display: block;
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -94,12 +87,10 @@ header h1:hover {
 }
 
 .card h2 {
-  color: white; /* Ensure text is readable on gradient */
+  color: white; 
 }
 
-/* =========================
-   Forms Section
-========================= */
+/*Forms Section */
 .forms {
   display: flex;
   justify-content: space-around;
@@ -156,9 +147,7 @@ form button:hover {
   transform: scale(1.05);
 }
 
-/* =========================
-   Tables
-========================= */
+/*Tables*/
 .tables {
   margin: 20px;
 }
@@ -188,9 +177,7 @@ tr:hover {
   transition: all 0.2s;
 }
 
-/* =========================
-   Modal
-========================= */
+/* Modal*/
 #modal {
   position: fixed;
   top: 0; left: 0;
@@ -208,9 +195,7 @@ tr:hover {
 
 .hidden { display: none; }
 
-/* =========================
-   Skill Tags
-========================= */
+/*Skill Tags */
 .skill-tag {
   display: inline-block;
   background: #43a047;
@@ -221,9 +206,7 @@ tr:hover {
   font-size: 0.9rem;
 }
 
-/* =========================
-   Responsive Design
-========================= */
+/*Responsive Design*/
 @media (max-width: 768px) {
   .dashboard, .forms {
     flex-direction: column;
@@ -234,6 +217,7 @@ tr:hover {
     width: 80%;
   }
 }
+
 
 
 

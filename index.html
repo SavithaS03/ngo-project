@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Donation & Volunteer Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>NGO Donation & Volunteer Management</h1>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Total Donations</h2>
+      <p id="totalDonations">$0</p>
+    </div>
+    <div class="card">
+      <h2>Number of Donors</h2>
+      <p id="donorCount">0</p>
+    </div>
+    <div class="card">
+      <h2>Total Volunteers</h2>
+      <p id="volunteerCount">0</p>
+    </div>
+  </section>
+
+  <section class="forms">
+    <div class="form-container">
+      <h2>Make a Donation</h2>
+      <form id="donationForm">
+        <input type="text" id="donorName" placeholder="Name" required>
+        <input type="email" id="donorEmail" placeholder="Email" required>
+        <input type="number" id="donorAmount" placeholder="Donation Amount" required>
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h2>Volunteer Registration</h2>
+      <form id="volunteerForm">
+        <input type="text" id="volName" placeholder="Name" required>
+        <input type="email" id="volEmail" placeholder="Email" required>
+        <input type="text" id="volSkills" placeholder="Skills" required>
+        <input type="text" id="volAvailability" placeholder="Availability" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="tables">
+    <h2>Donation History</h2>
+    <table id="donationTable">
+      <thead>
+        <tr>
+          <th>Receipt No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Volunteer List</h2>
+    <table id="volunteerTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Skills</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
